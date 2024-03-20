@@ -4,19 +4,19 @@ Aplicación de lista de tareas pendientes que permite ver la lista de tareas, ag
 Se definen dos dos estados llamados: todos (almacena la lista de tareas) y todoEditing (almacena el id de la tarea editada).
 ## Efecto
 ***useEffect(() => {...}, []):***
--*const json = localStorage.getItem("todos")*: Lee datos de la tarea de almacenamiento local.
-**const loadedTodos = JSON.parse(json)*: Convierte datos de formato JSON a Javascript.
-+*if (loadedTodos) { setTodos(loadedTodos)*: Actualiza las tareas si es que se cargaron nuevas al almacenamiento loca.
+- *const json = localStorage.getItem("todos")*: Lee datos de la tarea de almacenamiento local.
+* *const loadedTodos = JSON.parse(json)*: Convierte datos de formato JSON a Javascript.
++ *if (loadedTodos) { setTodos(loadedTodos)*: Actualiza las tareas si es que se cargaron nuevas al almacenamiento loca.
 
 ### Función handleSubmit.
 Esta función se ejecuta cuando se agrega una nueva tarea.
-•***let todo = document.getElementById('todoAdd').value***: Obtiene el valor del campo de entrada donde el usuario escribió la nueva tarea.
-•newTodo que representa la nueva tarea. 
+- ***let todo = document.getElementById('todoAdd').value***: Obtiene el valor del campo de entrada donde el usuario escribió la nueva tarea.
+* newTodo que representa la nueva tarea. 
 Asigna un 
   →id único.
   →el texto de la tarea obtenido del campo de entrada.
   →estado inicial (completado) falso.
-***(newTodo.text.length > 0)***,verifica si el texto de la tarea no está vacío . 
++ ***(newTodo.text.length > 0)***,verifica si el texto de la tarea no está vacío . 
 No vacío= agrega la nueva tarea.
 Vacío= muestra alerta.
 ***document.getElementById('todoAdd').value = ""***, limpia el campo de entrada.
