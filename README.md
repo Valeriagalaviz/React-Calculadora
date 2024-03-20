@@ -11,10 +11,11 @@ Se definen dos dos estados llamados: todos (almacena la lista de tareas) y todoE
 ### Función handleSubmit.
 Esta función se ejecuta cuando se agrega una nueva tarea.
 - ***let todo = document.getElementById('todoAdd').value***: Obtiene el valor del campo de entrada donde el usuario escribió la nueva tarea.
-* newTodo que representa la nueva tarea. Asigna un:
-  _ **id único**.
-  _ **el texto de la tarea obtenido del campo de entrada**.
-  _ **estado inicial (completado) falso**.
+* newTodo que representa la nueva tarea.
+Asigna un:
+  - **id único**.
+  - **el texto de la tarea obtenido del campo de entrada**.
+  - **estado inicial (completado) falso**.
 + ***(newTodo.text.length > 0)***,verifica si el texto de la tarea no está vacío . 
 No vacío= agrega la nueva tarea.
 Vacío= muestra alerta.
