@@ -4,9 +4,9 @@ Aplicación de lista de tareas pendientes que permite ver la lista de tareas, ag
 Se definen dos dos estados llamados: todos (almacena la lista de tareas) y todoEditing (almacena el id de la tarea editada).
 ## Efecto
 ***useEffect(() => {...}, []):***
-•*const json = localStorage.getItem("todos")*: Lee datos de la tarea de almacenamiento local.
-•*const loadedTodos = JSON.parse(json)*: Convierte datos de formato JSON a Javascript.
-•*if (loadedTodos) { setTodos(loadedTodos)*: Actualiza las tareas si es que se cargaron nuevas al almacenamiento loca.
+-*const json = localStorage.getItem("todos")*: Lee datos de la tarea de almacenamiento local.
+**const loadedTodos = JSON.parse(json)*: Convierte datos de formato JSON a Javascript.
++*if (loadedTodos) { setTodos(loadedTodos)*: Actualiza las tareas si es que se cargaron nuevas al almacenamiento loca.
 
 ### Función handleSubmit.
 Esta función se ejecuta cuando se agrega una nueva tarea.
@@ -20,7 +20,7 @@ Asigna un
 No vacío= agrega la nueva tarea.
 Vacío= muestra alerta.
 ***document.getElementById('todoAdd').value = ""***, limpia el campo de entrada.
-![Captura de pantalla 2024-03-20 102951](https://github.com/Valeriagalaviz/React-TodoList/assets/71987380/0f1f1c47-1a71-412d-951f-d8bad764dad4)
+![Captura de pantalla 2024-03-20 102951](https://github.com/Valeriagalaviz/React-TodoList/assets/71987380/339dd383-d555-4839-8a0d-f3981e4edb57)
 
 ### Función deleteTodo.
 Función que se ejecuta cuando se elimina una tarea
