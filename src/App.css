@@ -1,0 +1,234 @@
+<<<<<<< HEAD
+h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+  }
+
+  body {
+    background: #E5F1FF;
+  }
+  #todo-list {
+    width: 500px;
+    margin: 60px auto;
+  }
+  
+  form {
+    border: 1px solid 222831;
+    border-radius: 5px;
+    background-color: #B8D7FC;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  .todo {
+    border: 2px solid #91C3FC;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(2, 12, 139, 0.2);
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+  }
+  form input {
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin-right: 16px;
+  }
+  .todo {
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .add-button {
+    font-size: 16px;
+    background-color: #2088FC;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .add-button:hover {
+    background-color: #4FA2FE;
+    font-weight: bold;
+  }
+  .add-button:active {
+    background-color: #087CFE;
+  }
+  .add-button:focus {
+    outline: 0;
+  }
+  .submit-edits-button {
+    font-size: 16px;
+    background-color: #7337FB;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .submit-edits-button:hover {
+    background-color: #845EFC;
+    font-weight: bold;
+  }
+  .submit-edits-button:active {
+    background-color: #692BFC;
+  }
+  .edit-button, .cancel-edit-button {
+    font-size: 16px;
+    background-color: #F2CE46;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  .edit-button, .cancel-edit-button:hover {
+    background-color: #FADE77;
+    font-weight: bold;
+  }
+  .edit-button, .cancel-edit-button:active {
+    background-color: #FED12A;
+  }
+  .delete-button {
+    font-size: 16px;
+    background-color: #FF4D4D;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .delete-button:hover {
+    background-color: #FA7474;
+    font-weight: bold;
+  }
+  .delete-button:active {
+    background-color: #FB3131;
+  }
+  input[type='text'] { 
+    border: 2px solid #91C3FC;
+    font-size: 18px; 
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 20px; 
+  }
+  .todo input[type="checkbox"] {
+    transform: scale(1.8) translateY(1px);
+    margin: 0 16px 0 0;
+    cursor: pointer;
+  }
+  .todo-text input {
+    padding: 4px;
+  }
+  .todo-text {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1cm;
+    display: flex;
+    align-self: center;
+    color: black;
+  }
+  .todo-completed {
+    display: flex;
+    margin: 10px 0;
+  }
+  .todo-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #completed {
+    margin-left: 15px;
+  }
+=======
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1D2B53; 
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #EEEEEE; 
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 58px;
+  color: #0174BE; 
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bolder;
+}
+  
+p {
+  font-size: 18px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nombre {
+  font-size: 14px;
+  color: #FF6969; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter; 
+  font-style: oblique;
+}
+
+input[type="number"] {
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #0174BE;
+  background-color: white;
+  font-weight: bold; 
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 3px;
+  border-radius: 5px;
+  border: none;
+  background-color: #C70039;
+  color: white;
+  cursor: pointer;
+  font-weight: bold; 
+}
+
+button:hover {
+  background-color: #FF6969; 
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold; 
+  color: #000;
+}
+
+#resultado-num {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight:bold;
+  color: #FF6969;
+}
+>>>>>>> e53ae73c4866f91995e25eafc19e8c4d700df607
+
