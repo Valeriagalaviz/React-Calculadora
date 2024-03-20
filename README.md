@@ -13,9 +13,9 @@ Esta función se ejecuta cuando se agrega una nueva tarea.
 - ***let todo = document.getElementById('todoAdd').value***: Obtiene el valor del campo de entrada donde el usuario escribió la nueva tarea.
 * newTodo que representa la nueva tarea. 
 Asigna un 
-  →id único.
-  →el texto de la tarea obtenido del campo de entrada.
-  →estado inicial (completado) falso.
+  _ **id único**.
+  _ **el texto de la tarea obtenido del campo de entrada**.
+  _ **estado inicial (completado) falso**.
 + ***(newTodo.text.length > 0)***,verifica si el texto de la tarea no está vacío . 
 No vacío= agrega la nueva tarea.
 Vacío= muestra alerta.
@@ -24,26 +24,26 @@ Vacío= muestra alerta.
 
 ### Función deleteTodo.
 Función que se ejecuta cuando se elimina una tarea
-•Recibe el id de la tarea que se va a eliminar.
-•Crea una copia del array de tareas utilizando el spread operator ***([...todos])***.
-•Actualiza el de las tareas con setTodos.
+- Recibe el id de la tarea que se va a eliminar.
+* Crea una copia del array de tareas utilizando el spread operator ***([...todos])***.
++ Actualiza el de las tareas con setTodos.
 
 ### Función toggleComplete.
 Se ejecuta cuando se cambia el estado de la tarea a completado.
-•Recibe el id de la tarea cuyo estado se va a cambiar.
-•Crea una copia del array de tareas utilizando el spread operator ***([...todos])***.
-•Utiliza el método map para recorrer todas las tareas y modificar el estado completed de la tarea.
-•Actualiza el estado de todos con las tareas actualizadas utilizando setTodos.
+- Recibe el id de la tarea cuyo estado se va a cambiar.
+* Crea una copia del array de tareas utilizando el spread operator ***([...todos])***.
++ Utiliza el método map para recorrer todas las tareas y modificar el estado completed de la tarea.
+- Actualiza el estado de todos con las tareas actualizadas utilizando setTodos.
 
 ![Captura de pantalla 2024-03-20 103116](https://github.com/Valeriagalaviz/React-TodoList/assets/71987380/3b03a6df-1cd6-44b4-97e4-65bdaf6f5c7c)
 
 ### Función submitEdits.
 Se ejecuta cuando se quiere editar alguna tarea.
-•Recibe como parámetro la tarea modificada ***(newtodo)***.
-•Utiliza la función *_map_*, comprueba si el id de la tarea actual coincide con el id de la tarea que se está editando (newtodo.id).
-•Si coincide el id se actualiza el texto de la tarea todo.text. 
-•Retorna tarea actualizada o sin cambios.
-•Actualiza el estado con las tareas actualizadas  usando setTodos.
+- Recibe como parámetro la tarea modificada ***(newtodo)***.
+* Utiliza la función *_map_*, comprueba si el id de la tarea actual coincide con el id de la tarea que se está editando (newtodo.id).
++ Si coincide el id se actualiza el texto de la tarea todo.text. 
+- Retorna tarea actualizada o sin cambios.
+* Actualiza el estado con las tareas actualizadas  usando setTodos.
 
 ![Captura de pantalla 2024-03-20 103841](https://github.com/Valeriagalaviz/React-TodoList/assets/71987380/49a9b6fc-673c-4fc4-b28c-9194001ba133)
 
